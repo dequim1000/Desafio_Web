@@ -14,7 +14,7 @@ function pegardata(){
         
             axios.post('http://localhost/Desafio_Web/controllers/DetailsSms.php',data).then(function (x){
             try {
-                document.getElementById("nameSms").innerHTML = "";
+                document.getElementById("nameSms").innerHTML = x.data[0].NamePlan;
                 document.getElementById("UsadoSms").innerHTML = x.data[0].Request;
                 document.getElementById("RestSms").innerHTML = x.data[0].Restante;
                 Resquest = x.data[0].Request;
