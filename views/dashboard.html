@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="../images/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="flex-dashboard">
+        <sidebar id="sidebar">
+            <div class="sidebar-title">
+                <img src="../images/icon.png" alt="Logo de Um caminhão">
+                <h2>Expresso API</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <i class="fas fa-chart-line"></i>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-sms"></i>
+                        <a href="sms.html">Detalhes de SMS</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="planos.html">Detalhes de Chamadas</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-cog"></i> 
+                        <a href="configuracao.html">Configuração</a>
+                    </li>
+                    <li class="sidebar_logout">
+                        <i class="fas fa-sign-out-alt"></i> 
+                        <a href="../login.html" class="linkHeader">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </sidebar>
+        <main id="main-content">
+            <header>
+                <i id="iconMenu" onclick= "responsiveSidebar()" class="fas fa-bars"></i>
+                <a href="../login.html" class="linkHeader"> <i class="fas fa-sign-out-alt"></i> Logout</a>
+            </header>
+            <div class="main-content">
+                <div class="main-content-title">
+                    <h2>DASHBOARD</h2>
+                </div>
+                <div class="dashboard-content">
+                    <div class="dashboard-flex-parent">
+                        <!--SMS-->
+                        <div class="dashboard-card">
+                            <div class="dash-grafic">
+                                <a class="link-detalhes" href ="sms.html"><h2>SMS</h2></a>
+                                <div class="cardSms">
+                                    <div class="card text-white bg-primary cdSMS" style="max-width: 18rem;">
+                                        <div class="card-header">UTILIZADOS</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title" id="usadosSms"></h5>
+                                        </div>
+                                    </div>
+                                    <div class="card text-white bg-warning cdSMS" style="max-width: 18rem;">
+                                        <div class="card-header">RESTANTES</div>
+                                        <div class="card-body">
+                                            <h5 class="card-title" id="restantesSms"></h5>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="dash-info">
+                                
+                            </div>
+
+                            <div class="dash-legend">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">Resumo do Plano Pacote SMS</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <th>Nome do Plano</td>
+                                            <td id="PlanNameSms">APP 20</td>
+                                            
+                                        </tr>
+
+                                        <tr>
+                                            <th>Valor Mensal</td>
+                                            <td>R$500,00</td>
+                                        </tr>
+
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="dash-table">
+                                <h2>Números Mensal de Sms</h2>
+                                <div id="chart-div_sms" ></div>
+                            </div>
+
+                            <div class="dash-table-info">
+                                <p>Uso mensal de SMS: </p> <p id="MediaSms"></p>
+                            </div>
+                        </div>
+                        <!--CHAMADAS EXCEDENTES-->
+                        <div class="dashboard-card">
+                            <div class="dash-grafic">
+                                <a class="link-detalhes" href="planos.html"><h2>CHAMADAS EXCEDENTES</h2></a>
+                                <div id="donut_single_call"></div>
+                                <input type="text" id="restantesCall" hidden>
+                                <input type="text" id="usadosCall" hidden>
+                            </div>
+
+                            <div class="dash-info">
+                                <div class="contratado">
+                                    <h2>Restantes</h2>
+                                    <p id="Restantecall"></p>
+                                </div>
+                                <div class="utilizado">
+                                    <h2>Utilizado</h2>
+                                    <p id="Utilizadocall"></p>
+                                </div>
+                                <div class="extras">
+                                    <h2>Extras</h2>
+                                    <p id="Extrascall"></p>
+                                </div>
+                            </div>
+
+                            <div class="dash-legend">
+                                <table>
+                                    <thead>
+                                        <tr>
+                                            <th colspan="2">Resumo do Plano Pacote Chamadas Excedentes</th>
+                                        </tr>
+                                    </thead>
+
+                                    <tbody>
+                                        <tr>
+                                            <th>Nome do Plano</td>
+                                            <td id="PlanNameCall"></td>
+                                            
+                                        </tr>
+
+                                        <tr>
+                                            <th>Valor Mensal</td>
+                                            <td id="PriceCall"></td>
+                                        </tr>
+
+                                        <tr>
+                                            <th>Valor por Chamadas</td>
+                                            <td id="ValorChamada" ></td>
+                                        </tr>
+
+
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="dash-table">
+                                <h2>Números Chamadas Mensal</h2>
+                                <div id="chart-div_call" ></div>
+                            </div>
+
+                            <div class="dash-table-info">
+                                <p>Média de Chamadas Mensal:  </p> <p id="MediaCall"></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../plugins/fontawesome/js/all.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="../js/menu_sidebar.js"></script>
+    <script src="../js/planos.js"></script>
+    <script src="../js/dataTable.js"></script>
+</body>
+</html>
