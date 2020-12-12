@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="../images/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detalhes dos planos</title>
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="flex-dashboard">
+        <sidebar id="sidebar">
+            <div class="sidebar-title">
+                <img src="../images/icon.png" alt="Logo de Um caminhão">
+                <h2>Expresso API</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <i class="fas fa-chart-line"></i>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-sms"></i>
+                        <a href="sms.html">Detalhes de SMS</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="planos.html">Detalhes de Chamadas</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-cog"></i> 
+                        <a href="configuracao.html">Configuração</a>
+                    </li>
+                    <li class="sidebar_logout">
+                        <i class="fas fa-sign-out-alt"></i> 
+                        <a href="../login.html" class="linkHeader">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </sidebar>
+        <main id="main-content">
+            <header>
+                <i id="iconMenu" onclick= "responsiveSidebar()" class="fas fa-bars"></i>
+                <a href="../login.html" class="linkHeader"> <i class="fas fa-sign-out-alt"></i> Logout</a>
+            </header>
+            <div class="main-content">
+                <div class="main-content-title">
+                    <h2>DETALHES DOS SMS</h2>
+                </div>
+                <div class="row-content">
+                    <h3 class="font-primaria">Mês/Ano</h3>
+                    <input id="data-plano" type="month"><button id="pesquisarSMS" onclick="pegardata()"><i class="fas fa-search"></i></button>
+                </div>
+                <div class="column-content">
+                    <div class="font-plano"><h3>Detalhes do Meu SMS em</h3></div>
+                    <div class="font-plano"><h3 id ="data">--</h3></div>
+                </div>
+                <div>
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Nome</th>
+                                <th scope="col">Valor Mensal</th>
+                                <th scope="col">Qtde. Contratada</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="nameSms">-</td>
+                                <td>R$ 500,00</td>
+                                <td id="SmsContracted">-</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="column-content">
+                    <div class="font-plano"><h3>Meu uso</h3></div>
+                </div>
+                <div class="tables">
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>
+                                <th scope="col">Qtde. Total</th>
+                                <th scope="col">Usados</th>
+                                <th scope="col">Disponível</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td id="SmsTotal">-</td>
+                                <td id="UsadoSms">-</td>
+                                <td id="RestSms">-</td>  
+                          </tr>
+                        </tbody>
+                    </table>
+
+
+
+                    <table class="table">
+                        <thead class="thead-dark">
+                            <tr>                        
+                                <th style="text-align: center;" scope="col">Valor Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>                       
+                                <td style="text-align: center;">R$ 500,00</td>
+                          </tr>
+                        </tbody>
+                    </table>
+                </div>
+          </main>
+    </div>
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../plugins/fontawesome/js/all.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="../js/menu_sidebar.js"></script>
+     <script src="../js/detailsSMS.js"></script>
+    
+</body>
+</html>
