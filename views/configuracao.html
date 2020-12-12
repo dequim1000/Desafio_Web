@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="../images/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configuração</title>
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body>
+    <div class="flex-dashboard">
+        <sidebar id="sidebar">
+            <div class="sidebar-title">
+                <img src="../images/icon.png" alt="Logo de Um caminhão">
+                <h2>Expresso API</h2>
+            </div>
+            <div class="menu">
+                <ul>
+                    <li>
+                        <i class="fas fa-chart-line"></i>
+                        <a href="dashboard.html">Dashboard</a>
+                    </li>
+                   <li>
+                        <i class="fas fa-sms"></i>
+                        <a href="sms.html">Detalhes de SMS</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone-alt"></i>
+                        <a href="planos.html">Detalhes de Chamadas</a>
+                    </li>
+                    <li>
+                        <i class="fas fa-cog"></i> 
+                        <a href="configuracao.html">Configuração</a>
+                    </li>
+                    <li class="sidebar_logout">
+                        <i class="fas fa-sign-out-alt"></i> 
+                        <a href="../login.html" class="linkHeader">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </sidebar>
+        <main id="main-content">
+            <header>
+                <i id="iconMenu" onclick= "responsiveSidebar()" class="fas fa-bars"></i>
+                <a href="../login.html" class="linkHeader"> <i class="fas fa-sign-out-alt"></i> Logout</a>
+            </header>
+            <div class="main-content">
+                <div class="main-content-title">
+                    <h2>CONFIGURAÇÃO</h2>
+                </div>
+                <div class="column-content">
+                    <h3 class="font-plano">Selecione Abaixo os Provedores:</h3>
+                </div>
+                <div class="combox">
+                    <select id="provedores" class="opcaocbb" name="select">
+                        <option class="opcao" value="0"selected>-</option> 
+                        <option class="opcao" value="1">JAMEF</option> 
+                        <option class="opcao" value="2">RTE</option>
+                        <option class="opcao" value="3">GBC</option>
+                        <option class="opcao" value="4">ABC</option>
+                    </select>
+                </div>
+                <div class="loginProvedor">
+                    <form action="">
+                        <label for="labelEmail" class="labelprovedor">Email</label>
+                        <input class="form-control config" id="provedorEmail" type="email">
+                        <small id="userHide" class="form-text text-hiden" hidden>Email Vazio, preenhca o campo de email!</small>
+                        <label for="labelPass" class="labelprovedor">Senha</label>
+                        <input class="form-control config" id="provedorSenha" type="password"> 
+                        <small id="provedorError" class="form-text text-hiden" hidden>Dados incorretos!</small>
+                        <button type="button" class="btn btnLoginProvedor">Adicionar</button>
+                    </form>
+                </div>
+                <div class="column-content">
+                    <h3 class="font-plano">Seus Provedores</h3>
+                </div>
+                <div class="provedores-listados">
+                    <ul id="text">
+                    </ul>
+                </div>
+
+        </main>
+    </div>
+    <script src="../plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script src="../plugins/fontawesome/js/all.min.js"></script>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script src="../js/menu_sidebar.js"></script>
+    <script src="../js/configuracao.js"></script>
+    
+</body>
+</html>
