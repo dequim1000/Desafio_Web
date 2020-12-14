@@ -43,7 +43,7 @@ Projeto realizado pelos alunos:
   <li><a href="#">ESQUECEU A SENHA</a></li>
 </ul>
 
-## 👨‍💻 Comandos para testar o site.
+## 👨‍💻 Passo a Passo para testar o site.
 
 ```bash
 #Primeiro Baixe Xampp no seu computador
