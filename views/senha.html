@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="shortcut icon" href="../images/icon.png">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Esqueceu a senha</title>
+    <link rel="stylesheet" href="../plugins/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../plugins/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="../CSS/all.css">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+</head>
+<body style="background-color:#f9fafb;">
+    <div class="login">
+        <div class="banner-login">
+             <img src="../images/Logo.png" alt="Logo de Um caminhão">
+            <h2 style="color: white;">Expresso API</h2>
+        </div>
+        <div class="div-login">
+            <form>
+            <div class="form-group">
+                <h2 class="labelsenha">Digite seu email</h2>
+                <input type="email" class="form-control" id="email" aria-describedby="emailHelp" style="margin-top: 20px;" placeholder="Seu email">
+                <small id="emailHelp" class="form-text text-muted">Um email com uma nova senha sera enviado.</small>
+                <button id="enviar" type="button" class="btn btnLogin"style="margin-top: 20px; margin-left: 5px;">Enviar</button>
+              </div>
+            </form>
+        </div>
+       <div>
+           <a href="../login.html">
+                <img style="width: 50px; height: 50px; margin-right: 15px; margin-top: 10px;" src="../images/previous.png">
+            </a>
+        </div>
+        <script src="../js/senha.js"></script>
+</body>
+</html>
