@@ -13,12 +13,12 @@ Projeto realizado pelos alunos:
 # :computer: Tecnologias Utilizadas
 <ul>
   <li><a href="https://www.w3schools.com/html/">HTML</a></li>
-  <li><a href="https://www.w3schools.com/Css/">Css</a></li>
-  <li><a href="https://www.javascript.com/">Javascript</a></li>
-  <li><a href="https://getbootstrap.com/">BootStrap</a></li>
+  <li><a href="https://www.w3schools.com/Css/">CSS</a></li>
+  <li><a href="https://www.javascript.com/">JAVASCRIPT</a></li>
+  <li><a href="https://getbootstrap.com/">BOOTSTRAP</a></li>
   <li><a href="https://www.php.net/">PHP</a></li>
-  <li><a href="https://developers.google.com/chart/">Google Charts</a></li>
-  <li><a href="https://fontawesome.com/">Font Awesome</a></li>
+  <li><a href="https://developers.google.com/chart/">GOOGLE CHARTS</a></li>
+  <li><a href="https://fontawesome.com/">FONT AWESOME</a></li>
 </ul>
 
 
