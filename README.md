@@ -25,10 +25,20 @@ Projeto realizado pelos alunos:
 ### 💻 Projeto Web 
 
 ```bash
-href="https://github.com/dequim1000/Desafio_Web/login.html"Login
+#Login
 #Dashboard
 #Configurações
 #Detalhes de SMS
 #Detalhes de CALL
 #Esqueceu a senha
 ```
+
+### 💻 Link para as telas
+<ul>
+  <li><a href="https://github.com/dequim1000/Desafio_Web/blob/main/login.html">LOGIN</a></li>
+  <li><a href="https://github.com/dequim1000/Desafio_Web/blob/main/views/dashboard.html">DASHBOARD</a></li>
+  <li><a href="https://github.com/dequim1000/Desafio_Web/blob/main/views/planos.html">DETALHES DE CHAMADAS</a></li>
+  <li><a href="https://github.com/dequim1000/Desafio_Web/blob/main/views/sms.html">DETALHES DE SMS</a></li>
+  <li><a href="https://github.com/dequim1000/Desafio_Web/blob/main/views/configuracao.html">CONFIGURAÇÃO</a></li>
+  <li><a href="#">ESQUECEU A SENHA</a></li>
+</ul>
