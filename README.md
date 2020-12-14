@@ -25,7 +25,10 @@ Projeto realizado pelos alunos:
 ### 💻 Projeto Web 
 
 ```bash
-#Login
+href="https://github.com/dequim1000/Desafio_Web/login.html"Login
 #Dashboard
-#Responsive
+#Configurações
+#Detalhes de SMS
+#Detalhes de CALL
+#Esqueceu a senha
 ```
