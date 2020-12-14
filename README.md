@@ -33,7 +33,7 @@ Projeto realizado pelos alunos:
 #Esqueceu a senha
 ```
 
-### 💻 Link para as telas
+# :computer: Links Telas
 <ul>
   <li><a href="https://github.com/dequim1000/Desafio_Web/blob/main/login.html">LOGIN</a></li>
   <li><a href="https://github.com/dequim1000/Desafio_Web/blob/main/views/dashboard.html">DASHBOARD</a></li>
