@@ -22,7 +22,7 @@ Projeto realizado pelos alunos:
 </ul>
 
 
-### 💻 Projeto Web 
+## 💻 Telas criadas
 
 ```bash
 #Login
@@ -42,3 +42,4 @@ Projeto realizado pelos alunos:
   <li><a href="https://github.com/dequim1000/Desafio_Web/blob/main/views/configuracao.html">CONFIGURAÇÃO</a></li>
   <li><a href="#">ESQUECEU A SENHA</a></li>
 </ul>
+
