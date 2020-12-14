@@ -43,3 +43,16 @@ Projeto realizado pelos alunos:
   <li><a href="#">ESQUECEU A SENHA</a></li>
 </ul>
 
+## 👨‍💻 Comandos para testar o site.
+
+```bash
+#Primeiro Baixe Xampp no seu computador
+#Depois crie um banco de dados
+#Coloque as credenciais como
+   User: root
+   Pass: ""
+#Abra o arquivo "Banco.sql"
+#Rode os Create Table
+#Rode os Inserts para as tabelas
+#Após isso o site estará funcionando
+```
